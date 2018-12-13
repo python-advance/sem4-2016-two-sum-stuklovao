@@ -36,9 +36,7 @@ one-pass hash-table
 @deco
 def two_sum_dict(nums, target):
   dic = {}
-  for index, num in enumerate(nums): #функция enumerate() применяется для итерируемых коллекций 
-  #(строки, списки, словари и др.) и создает объект, который генерирует кортежи, 
-  #состоящие из двух элементов - индекса элемента и самого элемента.
+  for index, num in enumerate(nums): 
     n = target - num    
     if n not in dic:
       dic[num] = index      
